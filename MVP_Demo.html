@@ -48,26 +48,6 @@ Example KPI Tracking:<br>
 • Conversion Rate B: 3.1%<br>
 • Estimated Lift: +29%
 </div>
-
-</div>
-
-<script>
-function generate(){
-let text = document.getElementById("inputText").value;
-
-let benefit = "Benefit Focus: Discover how this product helps you achieve better results faster. " + text;
-let objection = "Objection Handling: If you've been hesitant before, this product solves that problem by offering reliability and ease of use. " + text;
-let emotional = "Emotional Appeal: Imagine the confidence and satisfaction you'll feel using this product every day. " + text;
-
-document.getElementById("variations").innerHTML = `
-<h2>2. AI Generated Variations</h2>
-<div class="output"><b>Benefit Focus Version</b><br>${benefit}</div>
-<div class="output"><b>Objection Handling Version</b><br>${objection}</div>
-<div class="output"><b>Emotional Appeal Version</b><br>${emotional}</div>
-`;
-
-document.getElementById("editedText").value = benefit;
-}
 <h2>ProductPlan AI MVP Features</h2>
 
 <h3>KPI Analytics Dashboard</h3>
@@ -127,6 +107,26 @@ document.getElementById("editedText").value = benefit;
 <footer>
 <p>ProductPlan AI MVP Demo. Demo metrics only, no live customer tracking.</p>
 </footer>
+</div>
+
+<script>
+function generate(){
+let text = document.getElementById("inputText").value;
+
+let benefit = "Benefit Focus: Discover how this product helps you achieve better results faster. " + text;
+let objection = "Objection Handling: If you've been hesitant before, this product solves that problem by offering reliability and ease of use. " + text;
+let emotional = "Emotional Appeal: Imagine the confidence and satisfaction you'll feel using this product every day. " + text;
+
+document.getElementById("variations").innerHTML = `
+<h2>2. AI Generated Variations</h2>
+<div class="output"><b>Benefit Focus Version</b><br>${benefit}</div>
+<div class="output"><b>Objection Handling Version</b><br>${objection}</div>
+<div class="output"><b>Emotional Appeal Version</b><br>${emotional}</div>
+`;
+
+document.getElementById("editedText").value = benefit;
+}
+
 
 </script>
 
